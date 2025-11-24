@@ -124,7 +124,7 @@ export const AuthProvider = ({ children }) => {
             });
 
             if (response.ok) {
-                navigate("/");
+                navigate("/success");
                 return null;
             } else {
                 const errorData = await response.json();
